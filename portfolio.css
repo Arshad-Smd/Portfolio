@@ -22,12 +22,12 @@ a{
 }
 a:hover{
     font-weight: bold;
-    color: rgb(155, 155, 255);
+    color: rgb(100, 100, 255);
 
 }
 span{
     font-weight: bold;
-    color: rgb(155, 155, 255);
+    color: rgb(100, 100, 255);
 }
 .header{
     display: flex;
@@ -45,6 +45,11 @@ span{
     height:calc(100vh - 13vh);
     /* display: flex; */
     width: 100%;
+}
+.main-buttons-div{
+    display: flex;
+    flex-wrap: wrap;
+   
 }
 .content-div{
     height: 100%;
@@ -64,8 +69,8 @@ span{
     overflow: hidden;
 }
 .machine-learning-img{
-    height: 400px;
-    width: 400px;
+    height: 450px;
+    width: 450px;
     position: absolute;
   
     left: 20px;
@@ -75,16 +80,18 @@ span{
 }
 .btns {
     padding: 10px;
-    border: 2px solid rgb(155, 155, 255);
-    color: rgb(0, 0, 0);
+    background:rgb(100, 100, 255) ;
+    border: 2px solid rgb(100, 100, 255);
+    color: rgb(255, 255, 255);
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease; /* Add transition */
     margin-right: 2px;
 }
 
 .btns:hover {
-    background-color: rgb(155, 155, 255);
-    color: white;
+    border: 2px solid rgb(100, 100, 255);
+    background:none;
+    color: rgb(0, 0, 0);
     font-weight: normal;
 }
 
@@ -108,7 +115,7 @@ span{
 .border {
     width: 80%;
     height: 2px;
-    background:rgb(155, 155, 255);
+    background:rgb(100, 100, 255);
    
 }
 .border-wrapper{
@@ -124,15 +131,16 @@ span{
     flex-direction:column ;
     align-items: center;
     justify-content: space-around;
-    border: 2px solid rgb(155, 155, 255);
+    border: 2px solid rgb(100, 100, 255);
     border-radius: 4px;
-    background-color:rgb(155, 155, 255) ;
+    background-color:rgb(100, 100, 255) ;
     transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 .cards-wrapper{
     padding: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 i{
@@ -144,9 +152,10 @@ i{
 }
 .custom-card:hover {
     transform: translateY(-5px); /* Lift the card by 5 pixels when hovered */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
 }
 .skill-desc{
     text-align: center;
     margin-top: 10px;
 }
+
